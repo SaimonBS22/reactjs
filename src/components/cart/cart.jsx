@@ -28,7 +28,7 @@ function Cart(){
    
     Swal.fire({
         title:'Muchas gracias por su compra',
-        text:'este es su orden de ID: ' + idOrder + ' Total: ' + getTotal(),
+        html:`<p>este es su orden de ID:`  + `${idOrder}</p> <br> <p>Total:`  + `${getTotal()}</p>`,
         background:' rgb(90, 90, 90)',
         color:'white',
         confirmButtonText: `Finalizar compra`,

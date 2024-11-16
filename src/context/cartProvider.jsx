@@ -3,9 +3,20 @@ import { useState } from "react"
 
 function CartProvider({ children}){
     const [cart, setCart] = useState([])
-    const addToCart = item => {if(item.quantity >= 1){
-        setCart([...cart, item])
-    }}
+    const addToCart = (item) => {
+        if(item.quantity >= 1){
+            setCart([...cart, item])
+    } if(cart.some(articulo => articulo.id === item.id)){
+        const carritoActualizado = cart.map(articulo => {
+                if(articulo.id === item.id){
+                    articulo.quantity = item.quantity
+            }
+            return articulo
+        })
+        setCart(carritoActualizado)
+    }
+        
+};
     
     const getQuantity = () => {
         const quantityOnly = cart.map(item => item.quantity)
