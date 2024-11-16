@@ -23,4 +23,4 @@ function ItemCount({detail}){
      )
 }
 
-export default ItemCount;
+export default ItemCount

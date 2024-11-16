@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app"
 
 
 const firebaseConfig = {
@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "musiuniverso-df5d1.firebasestorage.app",
   messagingSenderId: "180652819624",
   appId: "1:180652819624:web:da863daf9ad87148792e9d"
-};
+}
 
 
- export const app = initializeApp(firebaseConfig);
+ export const app = initializeApp(firebaseConfig)
