@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+hr{
+    background-color: black;
+}
+.imgCarrito{
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+}
+.Contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorNavBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.contenedorBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.tituloNavBar{
+    color: black;
+    margin-top: 15px;
+}
+.botonNavBar{
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: large;
+    padding: 10px;
+    border-radius: 5px;
+}
+.botonNavBar:hover{
+    background-color: rgba(70, 70, 70, 0.508);
+}
+.conteinerProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-row: 1/4;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: 20px;
+    gap: 35px;
+}
+.conteinerItemCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 35px;
+    gap: 10px;
+}
+.botonCarrito{
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.botonCarrito:hover{
+    background-color: rgba(70, 70, 70, 0.508);
+}
+.botonItemCount{
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 5px;
+}
+.botonItemCount:hover{
+    background-color: rgba(70, 70, 70, 0.508);
+}
+.imagenProducto{
+    height: 125px;
+    width: 125px;
+}
+.categoria{
+    font-weight: bolder;
+}
+.botonDetalles{
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 5px; 
+}
+.botonDetalles:hover{
+    background-color:black;
+    color: white;
+}
+.descripcion{
+    width: 175px;
+}
+.contenedorDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.parrafoDetailPrecio{
+    font-weight: bold;
+    font-size: large;
+}
+.parrafoDescripcion{
+    width: 750px;
+}
+.tituloDescripcion{
+    text-decoration: underline;
+    margin-left: 37%;
+}
+.imgDetail{
+    width: 250px;
+    height: 250px;
+}
+.containerLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.containerCarritoProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    gap: 20px;
+}
+.containerForm{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputForm{
+    border: 1px solid black;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.inputForm::placeholder{
+    color: black;
+}
+.botonForm{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20px;
+}
+.botonForm:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.imgCarritoProductos{
+    height: 100px;
+    width: 100px;
+}
+.containerDatosCompra{
+    display: flex;
+    flex-direction: row;
+}
+.parrafoCompra{
+    width: 150px;
+}
